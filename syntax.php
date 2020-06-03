@@ -121,7 +121,7 @@
         * @see render()
         * @static
         */
-        function handle($match, $state, $pos, &$handler){
+        function handle($match, $state, $pos, Doku_Handler $handler){
         /**    switch ($state) {
               case DOKU_LEXER_ENTER : 
                 break;
@@ -191,7 +191,7 @@
         * @public
         * @see handle()
         */
-        function render($mode, &$renderer, $data) {
+        function render($mode, Doku_Renderer $renderer, $data) {
             
             $table = "<div class='table sectionedit2'><table class='inline'>
                 <tbody>
